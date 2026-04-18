@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+
+        @*Employee Id : @ViewData["Id"] </br>
+        Employee Name : @ViewData["Name"] </br>
+        Gender : @ViewData["Gender"]*@
+        Employee Id : @TempData.Peek("Id") </br>
+        Employee Name : @TempData.Peek("Name") </br>
+        Gender : @TempData.Peek("Gender")
+      
+        @*<a href="/Employee/Second">Click</a>*@
+        <a href="/Employee/GetEmployee">GetEmployee</a>
+
+        @using(Html.BeginForm("Second", "Employee", FormMethod.Post))
+            {
+                <label> Id:</label>
+                @Html.TextBox("Id")
+                <br />
+                <lable> Name : </lable>
+                @Html.TextBox("name")
+                <br/>
+                <lable>Gender : </lable>
+                @Html.TextBox("gender")
+
+                <br/>
+                <input type="submit" value="Submit"/>
+                
+            }
+
+    </div>
+</body>
+</html>

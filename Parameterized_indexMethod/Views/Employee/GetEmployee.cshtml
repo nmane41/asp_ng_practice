@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Parameterized_indexMethod.Models.Employee> 
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetEmployee</title>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+            </tr>
+            @foreach(var emp in (IEnumerable<Parameterized_indexMethod.Models.Employee>)TempData["Employees"])
+            {
+                <tr>
+                    <td>@emp.Id</td>
+                    <td>@emp.name</td>
+                    <td>@emp.gender</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

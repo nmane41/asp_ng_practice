@@ -1,0 +1,27 @@
+﻿@model Parameterized_indexMethod.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Second</title>
+</head>
+<body>
+    <div>
+        @*Employee Id : @ViewData["Id"] </br>
+        Employee Name : @ViewData["Name"] </br>
+        Gender : @ViewData["Gender"]*@
+        @*Employee Id : @TempData["Id"] </br>
+        Employee Name : @TempData["Name"] </br>
+        Gender : @TempData["Gender"]*@
+
+        Employee Id : @Model.Id </br>
+        Employee Name : @Model.name </br>
+        Gender : @Model.gender
+    </div>
+</body>
+</html>

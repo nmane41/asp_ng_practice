@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Parameterized_indexMethod.Models.Employee>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeDetails</title>
+</head>
+<body>
+    <div>
+        <h4>Employee</h4>
+        <hr />
+        <table border="1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+            </tr>
+            @foreach (var emp in Model)
+            {
+                <tr>
+                    <td>@emp.Id</td>
+                    <td>@emp.name</td>
+                    <td>@emp.gender</td>
+                    <td>
+                        <p>
+                            @Html.ActionLink("Edit", "Edit", new { id = emp.Id }) |
+                            @Html.ActionLink("Back to List", "Index")
+                        </p>
+                    </td>
+                </tr>
+
+            }
+        </table>
+
+    </div>
+    
+        
+</body>
+</html>
