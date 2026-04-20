@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AWSCognito\\WebApp\\ASP_Web_APP\\ASP_Web_APP\\ASP_Web_APP.csproj",
+      "projectUniqueName": "D:\\AWSCognito\\WebApp\\MVCProject\\asp_ng_practice\\ASP_Web_APP\\ASP_Web_APP.csproj",
       "projectName": "ASP_Web_APP",
-      "projectPath": "D:\\AWSCognito\\WebApp\\ASP_Web_APP\\ASP_Web_APP\\ASP_Web_APP.csproj",
+      "projectPath": "D:\\AWSCognito\\WebApp\\MVCProject\\asp_ng_practice\\ASP_Web_APP\\ASP_Web_APP.csproj",
       "packagesPath": "C:\\Users\\The Lenovo\\.nuget\\packages\\",
-      "outputPath": "D:\\AWSCognito\\WebApp\\ASP_Web_APP\\ASP_Web_APP\\obj\\",
+      "outputPath": "D:\\AWSCognito\\WebApp\\MVCProject\\asp_ng_practice\\ASP_Web_APP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
