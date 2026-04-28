@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFDBContextStoreContainer" CdmEntityContainer="FirstDatabaseEntities">
+    <EntitySetMapping Name="StdDatas">
+      <EntityTypeMapping TypeName="EFDBContext.StdData">
+        <MappingFragment StoreEntitySet="StdData">
+          <ScalarProperty Name="roll" ColumnName="roll" />
+          <ScalarProperty Name="studentName" ColumnName="studentName" />
+          <ScalarProperty Name="standard" ColumnName="standard" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

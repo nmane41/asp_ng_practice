@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EFDemo2.Models.StdData>
+
+@{
+    ViewBag.Title = "GetStdData";
+}
+
+<h2>GetStdData</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.roll)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.studentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.standard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gender)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.roll)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.studentName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.standard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.gender)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.roll }) |
+            @Html.ActionLink("Details", "Details", new { id = item.roll }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.roll })
+        </td>
+    </tr>
+}
+
+</table>
